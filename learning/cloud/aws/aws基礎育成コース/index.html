@@ -1,0 +1,778 @@
+<!DOCTYPE html><html lang="ja"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="AWS基礎育成コースを基礎から実践へつなげて学ぶ技術教材。基本サービスからネットワーク・監視・セキュリティのハンズオンへ進みます。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://kryix.jp/learning/cloud/aws/aws%E5%9F%BA%E7%A4%8E%E8%82%B2%E6%88%90%E3%82%B3%E3%83%BC%E3%82%B9/"><meta property="og:type" content="website"><meta property="og:locale" content="ja_JP"><meta property="og:title" content="AWS基礎育成コース — 技術学習ロードマップ — Kryιk"><meta property="og:description" content="AWS基礎育成コースを基礎から実践へつなげて学ぶ技術教材。基本サービスからネットワーク・監視・セキュリティのハンズオンへ進みます。"><meta property="og:url" content="https://kryix.jp/learning/cloud/aws/aws%E5%9F%BA%E7%A4%8E%E8%82%B2%E6%88%90%E3%82%B3%E3%83%BC%E3%82%B9/"><meta name="theme-color" content="#c8ff4a"><script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"AWS基礎育成コース","description":"AWS基礎育成コースを基礎から実践へつなげて学ぶ技術教材。基本サービスからネットワーク・監視・セキュリティのハンズオンへ進みます。","educationalLevel":"基礎","learningResourceType":"Lesson","isPartOf":{"@type":"Course","name":"クラウドコース","url":"https://kryix.jp/learning/#course-cloud"}}</script><title>AWS基礎育成コース — 技術学習ロードマップ — Kryιk</title><link rel="stylesheet" href="/assets/BaseLayout.DLMVfHxw.css"></head> <body> <a class="skip-link" href="#main">本文へ移動</a> <header class="site-header"> <a class="brand" href="/" aria-label="ホームへ戻る">Kry<span lang="el">ι</span>k<span aria-hidden="true">.</span></a> <nav aria-label="メインナビゲーション"> <a href="/about/">自己紹介</a> <a href="/#patch-notes">人生</a> <a href="/#toolbox">技術</a> <a href="/projects/">作品</a> <a href="/research/">研究</a> <a href="/play/roulette/">遊び</a> <a href="/learning/">学ぶ</a> </nav> </header>  <main id="main" class="learning-note-page"> <div class="learning-note-shell" id="top"> <nav class="learning-breadcrumb" aria-label="パンくずリスト"> <a href="/learning/">技術学習</a> <span aria-hidden="true">/</span> <a href="/learning/#course-cloud">クラウド</a> <span aria-hidden="true">/</span><span>aws</span> </nav> <div class="learning-note-layout"> <aside class="learning-toc" aria-labelledby="learning-toc-title"> <p class="section-number">CLOUD / 基礎</p> <div class="learning-course-progress" aria-label="クラウドコース 6/22"> <span style="--learning-progress: 27.27272727272727%"></span> <small>6 / 22</small> </div> <h2 class="learning-course-nav-title">コース内の位置</h2> <div class="learning-course-neighbors"> <a href="/learning/cloud/aws/aws%E5%AD%A6%E7%BF%92%E3%82%B3%E3%83%BC%E3%82%B9%E7%B7%8F%E5%90%88%E6%A1%88%E5%86%85/"><span>← 前へ</span><strong>AWS学習コース総合案内 — 全領域の講座と参考リンク</strong></a> <a href="/learning/cloud/aws/aws%E4%B8%8A%E7%B4%9A%E8%A8%AD%E8%A8%88%E3%82%B3%E3%83%BC%E3%82%B9/"><span>次へ →</span><strong>AWS上級設計コース</strong></a> </div> <h2 id="learning-toc-title">この教材の目次</h2> <ol> <li><a href="#学習目標">学習目標</a></li><li><a href="#このコースの使い方">このコースの使い方</a></li><li><a href="#学習段階と講座一覧">学習段階と講座一覧</a></li><li class="learning-toc-subitem"><a href="#学習の段階参照位置-11">学習の段階（参照位置 11）</a></li><li class="learning-toc-subitem"><a href="#講座実習参照位置-12">講座・実習（参照位置 12）</a></li><li class="learning-toc-subitem"><a href="#講座実習参照位置-13">講座・実習（参照位置 13）</a></li><li class="learning-toc-subitem"><a href="#講座実習参照位置-14">講座・実習（参照位置 14）</a></li><li class="learning-toc-subitem"><a href="#講座実習参照位置-15">講座・実習（参照位置 15）</a></li><li class="learning-toc-subitem"><a href="#講座実習参照位置-16">講座・実習（参照位置 16）</a></li><li class="learning-toc-subitem"><a href="#講座実習参照位置-17">講座・実習（参照位置 17）</a></li><li class="learning-toc-subitem"><a href="#講座実習参照位置-18">講座・実習（参照位置 18）</a></li><li><a href="#元表の追補集計">元表の追補・集計</a></li><li><a href="#学習後の演習">学習後の演習</a></li><li><a href="#完了条件">完了条件</a></li> </ol> <a class="learning-index-back" href="/learning/#course-cloud"><span aria-hidden="true">←</span> コース一覧へ戻る</a> </aside> <article class="learning-prose"> <header class="learning-lesson-intro"> <p><span>基礎</span>LESSON 05</p> <strong>この教材で学ぶこと</strong> <span>基本サービスからネットワーク・監視・セキュリティのハンズオンへ進みます。</span> </header> <h1 id="aws基礎育成コース">AWS基礎育成コース</h1>
+<blockquote>
+<p>前提: <a href="/learning/cloud/aws/%E5%9F%BA%E7%A4%8E%E3%81%8B%E3%82%89%E8%A8%AD%E8%A8%88%E9%81%8B%E7%94%A8%E3%81%B8/">AWS基礎から設計・運用へ</a>。<a href="/learning/cloud/aws/aws%E5%AD%A6%E7%BF%92%E3%82%B3%E3%83%BC%E3%82%B9%E7%B7%8F%E5%90%88%E6%A1%88%E5%86%85/">AWS学習コース総合案内</a>で現在地を確認する。</p>
+</blockquote>
+<h2 id="学習目標">学習目標</h2>
+<p>IAM・ネットワーク・Web構築・監視・保存・セキュリティを基礎から定着させ、構成と運用を説明できる。</p>
+<h2 id="このコースの使い方">このコースの使い方</h2>
+<p>研修・資料・動画・実習を学習段階ごとに掲載する。推奨度・時間・費用・試験名は原資料に記載された当時の情報であり、現在の料金や受験資格を保証しない。
+リンク先の受講可否は提供元で確認する。「無料」は教材の当時の条件で、クラウド資源の利用料を含む意味ではない。
+URLがない参照指示も省略せず残している。元ガイドのSTEP番号と現行ガイドの構成が同じかは、<a href="https://aws.amazon.com/jp/training/ramp-up-guides/">AWS Ramp-Up Guides</a>で照合する。</p>
+<h2 id="学習段階と講座一覧">学習段階と講座一覧</h2>
+<h3 id="学習の段階参照位置-11">学習の段階（参照位置 11）</h3>
+<ul>
+<li>STEP ／ ①基礎知識の習得 ／ ②基礎知識の定着 ／ ③業務遂行による知識構築 ／ ④知識・経験の蓄積</li>
+<li>詳細 ／ クラウドの用語やサービスの概要を包括的に学習し、クラウドプラクティショナー相当の知識を身につける。 ／ ハンズオンを中心に、学習検証用のAWSアカウントを用いて基礎的な各種AWSサービスに実際に触れることで知識の定着を図る。 ／ 実務を通して基礎知識を実践的な知識に繋げる。システム開発のロールに応じ、各サービスの詳細やアーキテクチャ、セキュリティ、運用、コストを学習し、アーキテクトアソシエイト相当の知識を身につける。 ／ より多くの実績を積むことでクラウドエンジニアとしてのレベル向上を図る。また、プロジェクトマネージャの指示に従いつつ、独力で業務遂行ができることを目指す。</li>
+<li>期間（目安） ／ １か月 ／ 2か月 ／ 1～3年（案件：5～10件）</li>
+</ul>
+<p>補足: AWS学習用環境等を用いた個人学習 ／ 現場部門での ／ 業務遂行 ／ 基礎学習 ／ ＋ ／ AWSクラウド ／ プラクティショナー ／ 資格取得 ／ 複数現場／複数案件の業務遂行 ／ アーキテクト アソシエイト取得目標 ／ (業務経験 1～2年程度めど) ／ クラウドプラクティショナー ／ 取得目標</p>
+<h3 id="講座実習参照位置-12">講座・実習（参照位置 12）</h3>
+<h4 id="1-はじめてのクラウド">1. はじめてのクラウド</h4>
+<p>参照ID: S12R2 ／ 学習段階: 1</p>
+<p>概要: AWSの基本サービス、学ぶ意義を中心に理解できるようになるトレーニング。入門知識のインプットとして最適である。<br>
+サービス: VPC/ELB/EC2/S3/RDS/Braket/Rekognition/Lex/Connect<br>
+カテゴリ: クラウド全体<br>
+推奨度: ★★★<br>
+開催者(開催日): AWS<br>
+時間(目安): 半日<br>
+費用(税込): 無料</p>
+<p>リンク: <a href="https://register.gotowebinar.com/recording/6432198416444205068">参照ページ</a></p>
+<h4 id="2-責任共有モデル">2. 責任共有モデル</h4>
+<p>参照ID: S12R3 ／ 学習段階: 1</p>
+<p>概要: 責任共有モデルはロードマップでも初頭に学習すべきであり、EC2などの基本的なサービスを学んだうえでAWSがどういったものか理解してから学ぶべき教材である。<br>
+サービス: -<br>
+カテゴリ: アーキテクチャ<br>
+推奨度: ★★★<br>
+開催者(開催日): AWS<br>
+時間(目安): 3時間<br>
+費用(税込): 無料</p>
+<p>リンク: <a href="https://aws.amazon.com/jp/compliance/shared-responsibility-model/">参照ページ</a></p>
+<h4 id="3-awsome-day-online-ondemand">3. AWSome Day Online OnDemand</h4>
+<p>参照ID: S12R4 ／ 学習段階: 1</p>
+<p>概要: AWSに関してクラウドの基本知識から体系的に学べる。<br>
+サービス: VPC/Route 53/S3/EC2/DynamoDB/Outposts/Local　Zones/Wavelength/Lambda/ECS/S3 Glacier/EBS/RDS/Aurora/ELB/IAM/CloudTrail/Trusted Advisor/IoT Core/SageMaker/Managed Blockchain/Ground Station<br>
+カテゴリ: クラウド全体<br>
+推奨度: ★★★<br>
+開催者(開催日): AWS<br>
+時間(目安): 3時間<br>
+費用(税込): 無料</p>
+<p>リンク: <a href="https://pages.awscloud.com/JAPAN-event-OE-awsomeday-online-for-partner-ondemand-2021-reg-event.html">参照ページ</a></p>
+<h4 id="4-aws認定クラウドプラクティショナー準備セミナー">4. AWS認定クラウドプラクティショナー準備セミナー</h4>
+<p>参照ID: S12R5 ／ 学習段階: 1</p>
+<p>概要: AWSクラウドプラクティショナー資格対策で体系的に知識を通して説明している動画。クラウドプラクティショナーのための知識インプットが行える。<br>
+サービス: -<br>
+カテゴリ: 資格<br>
+推奨度: ★★★<br>
+開催者(開催日): AWS<br>
+時間(目安): 5時間<br>
+費用(税込): 無料</p>
+<p>リンク: <a href="https://partnercentral.awspartner.com/Resources?Id=0690h000007CEu9AAG">Partner Central（ログイン要）</a> ／ <a href="https://partnercentral.awspartner.com/Resources?Id=0690h000007CEuOAAW">Partner Central（ログイン要）</a> ／ <a href="https://partnercentral.awspartner.com/Resources?Id=0690h000007CEudAAG">Partner Central（ログイン要）</a> ／ <a href="https://partnercentral.awspartner.com/Resources?Id=0690h000007CEunAAG">Partner Central（ログイン要）</a></p>
+<h4 id="5-aws-cloud-practitioner-essentialsjapanese日本語実写版">5. AWS Cloud Practitioner Essentials(Japanese)(日本語実写版)</h4>
+<p>参照ID: S12R6 ／ 学習段階: 1</p>
+<p>概要: 資格対策のeラーニング。最後に「最終認定テスト」があり、クラウドプラクティショナーの模擬試験が行えるため、アウトプットとして有用である。<br>
+サービス: -<br>
+カテゴリ: 資格<br>
+推奨度: ★★★<br>
+開催者(開催日): AWS<br>
+時間(目安): 3時間<br>
+費用(税込): 無料</p>
+<p>リンク: <a href="https://www.aws.training/Details/eLearning?id=66479">学習コース（受講条件を確認）</a></p>
+<h4 id="6-aws-cloudpractitioner-essentials">6. AWS Cloud　Practitioner Essentials</h4>
+<p>参照ID: S12R7 ／ 学習段階: 1</p>
+<p>概要: トレノケートの有料資格対策。推奨度は低め。<br>
+サービス: -<br>
+カテゴリ: 資格<br>
+推奨度: ★☆☆<br>
+開催者(開催日): トレノケート<br>
+時間(目安): 1日<br>
+費用(税込): 77,000円</p>
+<p>リンク: <a href="https://www.trainocate.co.jp/reference/course_details.aspx?code=AWC0062V">参照ページ</a></p>
+<h4 id="7-2023年版この問題だけで合格可能aws-認定クラウドプラクティショナー-模擬試験問題集">7. 【2023年版】この問題だけで合格可能！AWS 認定クラウドプラクティショナー 模擬試験問題集</h4>
+<p>参照ID: S12R8 ／ 学習段階: 1</p>
+<p>概要: 資格を受ける上で問題形式でたくさん問題を解きたい人のためのコンテンツ。有料のため、重要度は低め。<br>
+サービス: -<br>
+カテゴリ: 資格<br>
+推奨度: ★☆☆<br>
+開催者(開催日): Udemy<br>
+時間(目安): 15時間<br>
+費用(税込): 2,400円</p>
+<p>リンク: <a href="https://www.udemy.com/course/aws-4260/">参照ページ</a></p>
+<h4 id="8-aws認定クラウドプラクティショナー">8. AWS認定クラウドプラクティショナー</h4>
+<p>参照ID: S12R9 ／ 学習段階: 1</p>
+<p>概要: 登竜門の認定資格。IT系資格だとITパスポートに該当する。<br>
+サービス: -<br>
+カテゴリ: 資格<br>
+推奨度: -<br>
+開催者(開催日): AWS<br>
+時間(目安): 2時間<br>
+費用(税込): 12,100円</p>
+<p>リンク: <a href="https://aws.amazon.com/jp/certification/certified-cloud-practitioner/">参照ページ</a></p>
+<h3 id="講座実習参照位置-13">講座・実習（参照位置 13）</h3>
+<h4 id="9-aws-の利用時におさえておきたい-10-のこと">9. AWS の利用時におさえておきたい 10 のこと</h4>
+<p>参照ID: S13R2 ／ 学習段階: ２</p>
+<p>概要: Well-Architected本書を学習するにはまだ難易度が高いため、動画コンテンツにて概要を説明したものを学習。また、AWSを利用する際に抑えておくセキュリティや信頼性、コスト最適化などに関しても説明されているため、実際の環境を触ったり構築したりするうえで必要な講座であると考える。<br>
+サービス: Well-Architected Framework/セキュリティ/コスト最適化<br>
+カテゴリ: セキュリティ/運用/アーキテクチャ<br>
+推奨度: ★★★<br>
+開催者(開催日): AWS<br>
+時間(目安): 1<br>
+費用(税込): 無料</p>
+<p>リンク: <a href="https://pages.awscloud.com/rs/112-TZM-766/images/C1-01.pdf">PDF資料</a> ／ <a href="https://youtu.be/dKwnFc95nus">動画</a></p>
+<h4 id="10-ハンズオンスケーラブルウェブサイト構築編">10. 【ハンズオン】スケーラブルウェブサイト構築編</h4>
+<p>参照ID: S13R3 ／ 学習段階: ２</p>
+<p>概要: ウェブシステム構築を通してEC2やRDSなどのAWSにおける基本的なサービスの使い方や設定に関して学ぶことができる。学習用環境などと組み合わせることでアウトプットすることができる。<br>
+サービス: EC2/RDS/ELB/VPC<br>
+カテゴリ: ウェブアプリ<br>
+推奨度: ★★★<br>
+開催者(開催日): AWS<br>
+時間(目安): 4<br>
+費用(税込): 無料</p>
+<p>リンク: <a href="https://pages.awscloud.com/JAPAN-event-OE-Hands-on-for-Beginners-Scalable-2022-reg-event.html?trk=aws_introduction_page">参照ページ</a></p>
+<h4 id="11-ハンズオンnetwork編">11. 【ハンズオン】Network編</h4>
+<p>参照ID: S13R4 ／ 学習段階: ２</p>
+<p>概要: VPCなどを利用してネットワークの構築方法などをハンズオン形式で学べる。アウトプットすることでより理解が深まる。<br>
+サービス: VPC/サイト間VPN/EC2<br>
+カテゴリ: ネットワーキングとコンテンツ配信<br>
+推奨度: ★★★<br>
+開催者(開催日): AWS<br>
+時間(目安): 24<br>
+費用(税込): 無料</p>
+<p>リンク: <a href="https://pages.awscloud.com/JAPAN-event-OE-Hands-on-for-Beginners-Network1-2022-reg-event.html?trk=aws_introduction_page">参照ページ</a> ／ <a href="https://pages.awscloud.com/JAPAN-event-OE-Hands-on-for-Beginners-Network2-2022-reg-event.html?trk=aws_introduction_page">参照ページ</a> ／ <a href="https://pages.awscloud.com/JAPAN-event-OE-Hands-on-for-Beginners-Network-3-2022-reg-event.html?trk=aws_introduction_page">参照ページ</a></p>
+<h4 id="12-ハンズオン監視編サーバーのモニタリングの基本を学ぼう">12. 【ハンズオン】監視編サーバーのモニタリングの基本を学ぼう</h4>
+<p>参照ID: S13R5 ／ 学習段階: ２</p>
+<p>概要: WordPressを題材に、どのようにAWSで監視していくかを体験できる。監視はAWSを利用していく上でかなり重要な要素となってくる。また、クラウドエンジニアとしても確実に学んでおくべき内容である。<br>
+サービス: CloudWatch/EC2/RDS/ALB<br>
+カテゴリ: マネジメントとガバナンス<br>
+推奨度: ★★★<br>
+開催者(開催日): AWS<br>
+時間(目安): 4<br>
+費用(税込): 無料</p>
+<p>リンク: <a href="https://pages.awscloud.com/JAPAN-event-OE-Hands-on-for-Beginners-monitoring-2022-reg-event.html?trk=aws_introduction_page">参照ページ</a></p>
+<h4 id="13-ハンズオンawsアカウントの作り方iam基本のキ">13. 【ハンズオン】AWSアカウントの作り方＆IAM基本のキ</h4>
+<p>参照ID: S13R6 ／ 学習段階: ２</p>
+<p>概要: AWSアカウント作成方法やIAMサービスに関する知識をハンズオンを交えて学ぶことができる。フェーズ１では基礎的な部分や全体的な概要から学んでいくのがいいと考えているため、ハンズオンなどを通して学んでいく。<br>
+サービス: IAM<br>
+カテゴリ: セキュリティ、アイデンティティ、コンプライアンス<br>
+推奨度: ★★★<br>
+開催者(開催日): AWS<br>
+時間(目安): 3<br>
+費用(税込): 無料</p>
+<p>リンク: <a href="https://pages.awscloud.com/JAPAN-event-OE-Hands-on-for-Beginners-1st-Step-2022-reg-event.html?trk=aws_introduction_page">参照ページ</a></p>
+<h4 id="14-ハンズオンsecurity編">14. 【ハンズオン】Security編</h4>
+<p>参照ID: S13R7 ／ 学習段階: ２</p>
+<p>概要: AWSアカウント取得後初めに行う最低限のセキュリティ対策などを学べる。フェーズ１にてAWS ConfigやCloudTrailに関しても学ぶ必要があるため、ハンズオンを通して学ぶ。<br>
+サービス: Identity/Access Management/Trusted Advisor/CloudTrail/Budgets/Config/Cost Exploler/GuardDuty<br>
+カテゴリ: マネジメントとガバナンス<br>
+推奨度: ★★★<br>
+開催者(開催日): AWS<br>
+時間(目安): 3<br>
+費用(税込): 無料</p>
+<p>リンク: <a href="https://pages.awscloud.com/JAPAN-event-OE-Hands-on-for-Beginners-Security-1-2022-reg-event.html?trk=aws_introduction_page">参照ページ</a></p>
+<h4 id="15-ハンズオンserverless編">15. 【ハンズオン】Serverless編</h4>
+<p>参照ID: S13R8 ／ 学習段階: ２</p>
+<p>概要: オリジナルAPIの作成やAWS SAM、Lambdaなどを利用するハンズオンを通してサーバーレスに関して学ぶことができる。サーバーレスはフェーズ１で学ぶべき内容である。<br>
+サービス: Lambda/S3<br>
+カテゴリ: サーバーレス<br>
+推奨度: ★★★<br>
+開催者(開催日): AWS<br>
+時間(目安): 8<br>
+費用(税込): 無料</p>
+<p>リンク: <a href="https://pages.awscloud.com/JAPAN-event-OE-Hands-on-for-Beginners-Serverless-1-2022-reg-event.html?trk=aws_introduction_page">参照ページ</a> ／ <a href="https://pages.awscloud.com/JAPAN-event-OE-Hands-on-for-Beginners-Serverless-2-2022-reg-event.html?trk=aws_introduction_page">参照ページ</a> ／ <a href="https://pages.awscloud.com/JAPAN-event-OE-Hands-on-for-Beginners-Serverless-3-2022-reg-event.html?trk=aws_introduction_page">参照ページ</a></p>
+<h4 id="16-サーバーレスって何が便利なの--aws-でサーバーレスを構築するためのサービスをグラレコで解説">16. サーバーレスって何が便利なの ? AWS でサーバーレスを構築するためのサービスをグラレコで解説</h4>
+<p>参照ID: S13R9 ／ 学習段階: ２</p>
+<p>概要: サーバーレスに関して概要から、料金などわかりやすく図で説明されている。ハンズオンに入る前に軽くインプットしておくことで理解を深めることができると考えたため。<br>
+サービス: Lambda<br>
+カテゴリ: サーバーレス<br>
+推奨度: ★★★<br>
+開催者(開催日): AWS<br>
+時間(目安): 0.5<br>
+費用(税込): 無料</p>
+<p>リンク: <a href="https://aws.amazon.com/jp/builders-flash/202003/awsgeek-serverless/?awsf.filter-name=*all">参照ページ</a></p>
+<h4 id="17-開発ガイドラインネットワークセキュリティ">17. 【開発ガイドライン】ネットワークセキュリティ</h4>
+<p>参照ID: S13R10 ／ 学習段階: ２</p>
+<p>概要: ハンズオンで学習したネットワークを深堀して知識に定着させるための資料。<br>
+サービス: VPC/Transit Gateway<br>
+カテゴリ: ネットワーキングとコンテンツ配信<br>
+推奨度: ★★★<br>
+開催者(開催日): AWS<br>
+時間(目安): 3<br>
+費用(税込): 無料</p>
+<p>リンク: 社内限定URL（公開版では非表示）</p>
+<p>公開学習の補完: 社内限定資料の内容は取得していない。<a href="https://docs.aws.amazon.com/">AWS公式ドキュメント</a>から上記サービスを検索して補う。</p>
+<h3 id="講座実習参照位置-14">講座・実習（参照位置 14）</h3>
+<h4 id="18-入門aws-におけるデータベースの選択指針">18. 【入門】AWS におけるデータベースの選択指針</h4>
+<p>参照ID: S14R2 ／ 学習段階: ２</p>
+<p>概要: データベースに関しては10個のデータベースがあり、各データベースの細かい内容まで学習するのでなく、比較してデータカテゴリや特徴を学習したほうがいいと考えるため、当該資料にて学習する。細かいデータベースに関してはアプリケーションエンジニアに進んだ際に学習する。<br>
+サービス: RDS/Aurora/Redshift/DynamoDB/ElastiCache/DocumentDB/Keyspaces/Neptune/TimeStream/QLDB<br>
+カテゴリ: データベース<br>
+推奨度: ★★★<br>
+開催者(開催日): AWS<br>
+時間(目安): 1<br>
+費用(税込): 無料</p>
+<p>リンク: <a href="https://pages.awscloud.com/rs/112-TZM-766/images/C2-03.pdf">PDF資料</a> ／ <a href="https://youtu.be/h1r8AzOdlqo">動画</a></p>
+<h4 id="19-入門aws-ストレージサービス入門">19. 【入門】AWS ストレージサービス入門</h4>
+<p>参照ID: S14R3 ／ 学習段階: ２</p>
+<p>概要: ストレージに関して学ぶにあたり、学習すべき点としては各ストレージクラスやストレージサービスの違いであるため、当該資料にて学習する。<br>
+サービス: EBS/EFS/FSx/S3/S3 Glacier<br>
+カテゴリ: ストレージ<br>
+推奨度: ★★★<br>
+開催者(開催日): AWS<br>
+時間(目安): 1<br>
+費用(税込): 無料</p>
+<p>リンク: <a href="https://pages.awscloud.com/rs/112-TZM-766/images/C2-08.pdf">PDF資料</a> ／ <a href="https://youtu.be/rtlT4ABLEng">動画</a></p>
+<h4 id="20-ハンズオンamazon-cloudfrontおよびaws-wafを用いてエッジサービスの活用方法を学ぼう">20. 【ハンズオン】Amazon CloudFrontおよびAWS WAFを用いてエッジサービスの活用方法を学ぼう</h4>
+<p>参照ID: S14R4 ／ 学習段階: ２</p>
+<p>概要: ひとつ前にインプットした知識に関してハンズオンを通してアウトプットすることでより知識を定着できるため。<br>
+サービス: CloudFront/WAF<br>
+カテゴリ: ネットワーキングとコンテンツ配信<br>
+推奨度: ★★★<br>
+開催者(開催日): AWS<br>
+時間(目安): 4<br>
+費用(税込): 無料</p>
+<p>リンク: <a href="https://pages.awscloud.com/JAPAN-event-OE-Hands-on-for-Beginners-CF_WAF-2022-reg-event.html?trk=aws_introduction_page">参照ページ</a></p>
+<h3 id="講座実習参照位置-15">講座・実習（参照位置 15）</h3>
+<h4 id="21-ハンズオンwell-architected-labs">21. 【ハンズオン】Well-Architected Labs</h4>
+<p>参照ID: S15R2 ／ 学習段階: ３</p>
+<p>概要: Well-Architected Framework本書は内容もかなり多く、学習難易度が高いため、実際に手を動かしてアウトプットすることのできるハンズオン学習。各柱にて題材毎に学ぶことができる。<br>
+サービス: Well-Architected Framework<br>
+カテゴリ: アーキテクチャ/運用<br>
+推奨度: ★★☆<br>
+開催者(開催日): AWS<br>
+時間(目安): 9<br>
+費用(税込): 無料</p>
+<p>リンク: <a href="https://www.wellarchitectedlabs.com/security/">参照ページ</a></p>
+<h4 id="22-aws-well-architected-フレームワーク2023">22. AWS Well-Architected フレームワーク(2023)</h4>
+<p>参照ID: S15R3 ／ 学習段階: ３</p>
+<p>概要: Well-Architedted Framework本書。AWSを学ぶ上でかなり重要となるが難易度が高いためクラウドエンジニア上級で学習すべきとした。<br>
+サービス: Well-Architected Framework<br>
+カテゴリ: アーキテクチャ/運用<br>
+推奨度: ★★☆<br>
+開催者(開催日): AWS<br>
+時間(目安): 10<br>
+費用(税込): 無料</p>
+<p>リンク: <a href="https://docs.aws.amazon.com/ja_jp/wellarchitected/latest/framework/wellarchitected-framework.pdf">PDF資料</a></p>
+<h4 id="23-architecting-for-the-cloud-2019---クラウドにおけるアーキテクチャの設計原則">23. Architecting for the Cloud 2019 - クラウドにおけるアーキテクチャの設計原則</h4>
+<p>参照ID: S15R4 ／ 学習段階: ３</p>
+<p>概要: クラウドエンジニアに必要であると考える、アーキテクトの知識。基本から実践まで説明しているため、導入としてはいい教材であると考える。障害を見越した設計やセキュリティ、ストレージの選択肢や伸縮性などについて説明されている。<br>
+サービス: EC2/VPC/S3/EBS/S3 Glacier/Aurora/DynamoDB/EFS/ElastiCache/CloudTrail/Config/GuardDuty/Security Hub/SQS/CloudFront/Trusted Advisor<br>
+カテゴリ: アーキテクチャ<br>
+推奨度: ★★★<br>
+開催者(開催日): AWS<br>
+時間(目安): 2<br>
+費用(税込): 無料</p>
+<p>リンク: <a href="https://pages.awscloud.com/rs/112-TZM-766/images/B2-08.pdf">PDF資料</a> ／ <a href="https://youtu.be/FbnneJ17TA0">動画</a></p>
+<h4 id="24-今さら聞けない耐障害性の話-クラウドで信頼性を高めるためには">24. 今さら聞けない耐障害性の話 ～クラウドで信頼性を高めるためには～</h4>
+<p>参照ID: S15R5 ／ 学習段階: ３</p>
+<p>概要: 耐障害性に関するコンテンツ。運用管理のために学習すべきコンテンツ。<br>
+サービス: VPC/EC2/ELB<br>
+カテゴリ: アーキテクチャ/運用<br>
+推奨度: ★★★<br>
+開催者(開催日): AWS<br>
+時間(目安): 1<br>
+費用(税込): 無料</p>
+<p>リンク: <a href="https://pages.awscloud.com/rs/112-TZM-766/images/E3-06.pdf">PDF資料</a> ／ <a href="https://www.youtube.com/watch?v=9RD7hCZlSG0">動画</a></p>
+<h4 id="25-開発ガイドラインelastic-load-balancing">25. 【開発ガイドライン】Elastic Load Balancing</h4>
+<p>参照ID: S15R6 ／ 学習段階: ３</p>
+<p>概要: フェーズ１で学習した内容を深堀して知識に定着させるための資料。<br>
+サービス: ELB<br>
+カテゴリ: ネットワーキングとコンテンツ配信<br>
+推奨度: ★★☆<br>
+開催者(開催日): 提供元組織<br>
+時間(目安): 2<br>
+費用(税込): 無料</p>
+<p>リンク: 社内限定URL（公開版では非表示）</p>
+<p>公開学習の補完: 社内限定資料の内容は取得していない。<a href="https://docs.aws.amazon.com/">AWS公式ドキュメント</a>から上記サービスを検索して補う。</p>
+<h4 id="26-amazon-cloudfront-deep-dive">26. Amazon CloudFront deep dive</h4>
+<p>参照ID: S15R7 ／ 学習段階: ３</p>
+<p>概要: フェーズ１のハンズオンで学んだ内容に補足してサービスの説明を行う。<br>
+サービス: CloudFront<br>
+カテゴリ: ネットワーキングとコンテンツ配信<br>
+推奨度: ★★★<br>
+開催者(開催日): AWS<br>
+時間(目安): 2<br>
+費用(税込): 無料</p>
+<p>リンク: <a href="https://pages.awscloud.com/rs/112-TZM-766/images/20201028_BlackBelt_Amazon_CloudFront_deep_dive.pdf">PDF資料</a> ／ <a href="https://www.youtube.com/watch?v=C9SnQibtY0A">動画</a></p>
+<h4 id="27-開発ガイドラインvpn-overview">27. 【開発ガイドライン】VPN OverView</h4>
+<p>参照ID: S15R8 ／ 学習段階: ３</p>
+<p>概要: サイト間VPNやDirectConnectなどネットワークサービスの概要に関して学ぶ。<br>
+サービス: サイト間VPN/DirectConnect<br>
+カテゴリ: ネットワーキングとコンテンツ配信<br>
+推奨度: ★★★<br>
+開催者(開催日): AWS<br>
+時間(目安): 2<br>
+費用(税込): 無料</p>
+<p>リンク: 社内限定URL（公開版では非表示）</p>
+<p>公開学習の補完: 社内限定資料の内容は取得していない。<a href="https://docs.aws.amazon.com/">AWS公式ドキュメント</a>から上記サービスを検索して補う。</p>
+<h4 id="28-開発ガイドラインvpn-servicedirect-connect">28. 【開発ガイドライン】VPN Service(Direct Connect)</h4>
+<p>参照ID: S15R9 ／ 学習段階: ３</p>
+<p>概要: フェーズ１で学習した内容を深堀して知識に定着させるための資料。<br>
+サービス: DirectConnect<br>
+カテゴリ: ネットワーキングとコンテンツ配信<br>
+推奨度: ★★★<br>
+開催者(開催日): 提供元組織<br>
+時間(目安): 3<br>
+費用(税込): 無料</p>
+<p>リンク: 社内限定URL（公開版では非表示）</p>
+<p>公開学習の補完: 社内限定資料の内容は取得していない。<a href="https://docs.aws.amazon.com/">AWS公式ドキュメント</a>から上記サービスを検索して補う。</p>
+<h4 id="29-開発ガイドラインvpn-serviceclient-vpn">29. 【開発ガイドライン】VPN Service(Client-VPN)</h4>
+<p>参照ID: S15R10 ／ 学習段階: ３</p>
+<p>概要: クライアントVPNに関しての資料。重要なサービスではあるが、難易度が高いため推奨度を下げている。<br>
+サービス: VPN<br>
+カテゴリ: ネットワーキングとコンテンツ配信<br>
+推奨度: ★★☆<br>
+開催者(開催日): 提供元組織<br>
+時間(目安): 3<br>
+費用(税込): 無料</p>
+<p>リンク: 社内限定URL（公開版では非表示）</p>
+<p>公開学習の補完: 社内限定資料の内容は取得していない。<a href="https://docs.aws.amazon.com/">AWS公式ドキュメント</a>から上記サービスを検索して補う。</p>
+<h4 id="30-開発ガイドラインvpn-servicesite-to-site-vpn">30. 【開発ガイドライン】VPN Service(Site-to-Site-VPN)</h4>
+<p>参照ID: S15R11 ／ 学習段階: ３</p>
+<p>概要: フェーズ１で学習した内容を深堀して知識に定着させるための資料。<br>
+サービス: サイト間VPN<br>
+カテゴリ: ネットワーキングとコンテンツ配信<br>
+推奨度: ★★☆<br>
+開催者(開催日): 提供元組織<br>
+時間(目安): 3<br>
+費用(税込): 無料</p>
+<p>リンク: 社内限定URL（公開版では非表示）</p>
+<p>公開学習の補完: 社内限定資料の内容は取得していない。<a href="https://docs.aws.amazon.com/">AWS公式ドキュメント</a>から上記サービスを検索して補う。</p>
+<h4 id="31-開発ガイドラインec2">31. 【開発ガイドライン】EC2</h4>
+<p>参照ID: S15R12 ／ 学習段階: ３</p>
+<p>概要: EC2に関してハンズオンや全体的な説明を通して学んできたが、セキュリティグループなどサービス単体に目を向けなければわからないことを学習する。<br>
+サービス: EC2<br>
+カテゴリ: コンピューティング<br>
+推奨度: ★★★<br>
+開催者(開催日): 提供元組織<br>
+時間(目安): 3<br>
+費用(税込): 無料</p>
+<p>リンク: 社内限定URL（公開版では非表示）</p>
+<p>公開学習の補完: 社内限定資料の内容は取得していない。<a href="https://docs.aws.amazon.com/">AWS公式ドキュメント</a>から上記サービスを検索して補う。</p>
+<h4 id="32-aws-identity-and-access-management-iam">32. AWS Identity and Access Management (IAM)</h4>
+<p>参照ID: S15R13 ／ 学習段階: ３</p>
+<p>概要: フェーズ１ではIAMに関してハンズオンを通して学んだが、アクセス権限の管理や権限の委任、ライフサイクルなど更に深堀した内容を学習する。<br>
+サービス: IAM<br>
+カテゴリ: セキュリティ、アイデンティティ、コンプライアンス<br>
+推奨度: ★★☆<br>
+開催者(開催日): AWS<br>
+時間(目安): 2<br>
+費用(税込): 無料</p>
+<p>リンク: <a href="https://pages.awscloud.com/rs/112-TZM-766/images/20190129_AWS-BlackBelt_IAM_Part1.pdf">PDF資料</a> ／ <a href="https://www.youtube.com/watch?v=K7F5yTThynw&amp;feature=youtu.be">動画</a></p>
+<p>追補リンク: <a href="https://pages.awscloud.com/rs/112-TZM-766/images/20190130_AWS-BlackBelt_IAM_Part2.pdf">PDF資料</a> ／ <a href="https://www.youtube.com/watch?v=K7F5yTThynw&amp;feature=youtu.be">動画</a></p>
+<p>追補リンク: <a href="https://pages.awscloud.com/rs/112-TZM-766/images/20190130_AWS-BlackBelt_IAM_Part2.pdf">PDF資料</a> ／ <a href="https://www.youtube.com/watch?v=K7F5yTThynw&amp;feature=youtu.be">動画</a></p>
+<h4 id="33-aws-waf">33. AWS WAF</h4>
+<p>参照ID: S15R16 ／ 学習段階: ３</p>
+<p>概要: AWS WAFに関してフェーズ１でハンズオンを通して学んだ。フェーズ２ではそのサービス内容をさらに深堀して学習する。<br>
+サービス: WAF<br>
+カテゴリ: セキュリティ、アイデンティティ、コンプライアンス<br>
+推奨度: ★★☆<br>
+開催者(開催日): AWS<br>
+時間(目安): 2<br>
+費用(税込): 無料</p>
+<p>リンク: <a href="https://pages.awscloud.com/rs/112-TZM-766/images/20200324_AWS_BlackBelt_AWS_WAF_Update.pdf">PDF資料</a> ／ <a href="https://www.youtube.com/watch?v=4KbCJAjiA3A">動画</a></p>
+<h3 id="講座実習参照位置-16">講座・実習（参照位置 16）</h3>
+<h4 id="34-amazon-cognito">34. Amazon Cognito</h4>
+<p>参照ID: S16R2 ／ 学習段階: ３</p>
+<p>概要: SAA試験の対象範囲であり、主要サービスであるCognitoに関して学ぶことができる。<br>
+サービス: Cognito<br>
+カテゴリ: セキュリティ、アイデンティティ、コンプライアンス<br>
+推奨度: ★★☆<br>
+開催者(開催日): AWS<br>
+時間(目安): 2<br>
+費用(税込): 無料</p>
+<p>リンク: <a href="https://pages.awscloud.com/rs/112-TZM-766/images/20200630_AWS_BlackBelt_Amazon_Cognito_ver2.pdf">PDF資料</a> ／ <a href="https://www.youtube.com/watch?v=vWfTe5MHOIk">動画</a></p>
+<h4 id="35-aws-key-management-service">35. AWS Key Management Service</h4>
+<p>参照ID: S16R3 ／ 学習段階: ３</p>
+<p>概要: KMSも試験の対象であるが、高度なセキュリティ実装であるため、★★☆。<br>
+サービス: AWS KMS<br>
+カテゴリ: セキュリティ、アイデンティティ、コンプライアンス<br>
+推奨度: ★★☆<br>
+開催者(開催日): AWS<br>
+時間(目安): 2<br>
+費用(税込): 無料</p>
+<p>リンク: <a href="https://pages.awscloud.com/rs/112-TZM-766/images/20181121_AWS-BlackBelt-KMS.pdf">PDF資料</a> ／ <a href="https://www.youtube.com/watch?v=4F5rSxzu0U4">動画</a></p>
+<h4 id="36-開発ガイドラインrds">36. 【開発ガイドライン】RDS</h4>
+<p>参照ID: S16R4 ／ 学習段階: ３</p>
+<p>概要: フェーズ１でデータベースを比較しての特徴を学んだが、ここでは一番メインのRDSサービス単体に関して学ぶことができる。<br>
+サービス: RDS<br>
+カテゴリ: データベース<br>
+推奨度: ★★★<br>
+開催者(開催日): 提供元組織<br>
+時間(目安): 3<br>
+費用(税込): 無料</p>
+<p>リンク: 社内限定URL（公開版では非表示）</p>
+<p>公開学習の補完: 社内限定資料の内容は取得していない。<a href="https://docs.aws.amazon.com/">AWS公式ドキュメント</a>から上記サービスを検索して補う。</p>
+<h4 id="37-開発ガイドラインdynamodb">37. 【開発ガイドライン】DynamoDB</h4>
+<p>参照ID: S16R5 ／ 学習段階: ３</p>
+<p>概要: 同じくDynamoDBも主要なサービスであるため、学んでおく。<br>
+サービス: Dynamo DB<br>
+カテゴリ: データベース<br>
+推奨度: ★★★<br>
+開催者(開催日): 提供元組織<br>
+時間(目安): 3<br>
+費用(税込): 無料</p>
+<p>リンク: 社内限定URL（公開版では非表示）</p>
+<p>公開学習の補完: 社内限定資料の内容は取得していない。<a href="https://docs.aws.amazon.com/">AWS公式ドキュメント</a>から上記サービスを検索して補う。</p>
+<h4 id="38-開発ガイドラインamazon-s3">38. 【開発ガイドライン】Amazon S3</h4>
+<p>参照ID: S16R6 ／ 学習段階: ３</p>
+<p>概要: フェーズ１でストレージクラスを比較して学んだが、更に細かくS3やGlacierに関して学ぶ必要がある。<br>
+サービス: S3<br>
+カテゴリ: ストレージ<br>
+推奨度: ★★★<br>
+開催者(開催日): 提供元組織<br>
+時間(目安): 3<br>
+費用(税込): 無料</p>
+<p>リンク: 社内限定URL（公開版では非表示）</p>
+<p>公開学習の補完: 社内限定資料の内容は取得していない。<a href="https://docs.aws.amazon.com/">AWS公式ドキュメント</a>から上記サービスを検索して補う。</p>
+<h4 id="39-開発ガイドラインamazon-efs">39. 【開発ガイドライン】Amazon EFS</h4>
+<p>参照ID: S16R7 ／ 学習段階: ３</p>
+<p>概要: フェーズ１で学習した内容を深堀して知識に定着させるための資料。<br>
+サービス: EFS<br>
+カテゴリ: ストレージ<br>
+推奨度: ★★★<br>
+開催者(開催日): 提供元組織<br>
+時間(目安): 3<br>
+費用(税込): 無料</p>
+<p>リンク: 社内限定URL（公開版では非表示）</p>
+<p>公開学習の補完: 社内限定資料の内容は取得していない。<a href="https://docs.aws.amazon.com/">AWS公式ドキュメント</a>から上記サービスを検索して補う。</p>
+<h4 id="40-開発ガイドラインaws-cloudformation">40. 【開発ガイドライン】AWS CloudFormation</h4>
+<p>参照ID: S16R8 ／ 学習段階: ３</p>
+<p>概要: フェーズ１で学習した内容を深堀して知識に定着させるための資料。<br>
+サービス: CloudFormation<br>
+カテゴリ: マネジメントとガバナンス<br>
+推奨度: ★★☆<br>
+開催者(開催日): 提供元組織<br>
+時間(目安): 3<br>
+費用(税込): 無料</p>
+<p>リンク: 社内限定URL（公開版では非表示）</p>
+<p>公開学習の補完: 社内限定資料の内容は取得していない。<a href="https://docs.aws.amazon.com/">AWS公式ドキュメント</a>から上記サービスを検索して補う。</p>
+<h4 id="41-amazon-cloudwatch-の概要と基本">41. Amazon CloudWatch の概要と基本</h4>
+<p>参照ID: S16R9 ／ 学習段階: ３</p>
+<p>概要: 監視のハンズオンにてCloudWatchに関しては学んだが、サービス単体としては学習していないため、オブザーバビリティなどの観点からCloudWatchに関して学習する。<br>
+サービス: CloudWatch<br>
+カテゴリ: マネジメントとガバナンス<br>
+推奨度: ★★☆<br>
+開催者(開催日): AWS<br>
+時間(目安): 2<br>
+費用(税込): 無料</p>
+<p>リンク: <a href="https://pages.awscloud.com/rs/112-TZM-766/images/AWS-Black-Belt_2023_AmazonCloudWatch_0330_v1.pdf">PDF資料</a> ／ <a href="https://www.youtube.com/watch?v=fzVkJne3OMI">動画</a></p>
+<h4 id="42-aws-systems-manager">42. AWS Systems Manager</h4>
+<p>参照ID: S16R10 ／ 学習段階: ３</p>
+<p>概要: 試験の対象範囲であり、主要サービスであるから。<br>
+サービス: Systems Manager<br>
+カテゴリ: マネジメントとガバナンス<br>
+推奨度: ★★☆<br>
+開催者(開催日): AWS<br>
+時間(目安): 2<br>
+費用(税込): 無料</p>
+<p>リンク: <a href="https://pages.awscloud.com/rs/112-TZM-766/images/20200212_AWSBlackBelt_SystemsManager_0214.pdf">PDF資料</a> ／ <a href="https://youtu.be/UXSbh4Wsp7c">動画</a></p>
+<h4 id="43-aws-organizations">43. AWS Organizations</h4>
+<p>参照ID: S16R11 ／ 学習段階: ３</p>
+<p>概要: Organizationsは学習用環境を触っていても学習できないサービスであり、重要なサービスであるため学んでおく。<br>
+サービス: Organizations<br>
+カテゴリ: マネジメントとガバナンス<br>
+推奨度: ★★☆<br>
+開催者(開催日): AWS<br>
+時間(目安): 2<br>
+費用(税込): 無料</p>
+<p>リンク: <a href="https://pages.awscloud.com/rs/112-TZM-766/images/20180214_AWS-Blackbelt-Organizations.pdf">PDF資料</a></p>
+<h4 id="44-aws-cloudtrail">44. AWS CloudTrail</h4>
+<p>参照ID: S16R12 ／ 学習段階: ３</p>
+<p>概要: ハンズオンにて学んだCloudTrailを深堀して学ぶことができる。<br>
+サービス: CloudTrail<br>
+カテゴリ: セキュリティ、アイデンティティ、コンプライアンス<br>
+推奨度: ★★☆<br>
+開催者(開催日): AWS<br>
+時間(目安): 1<br>
+費用(税込): 無料</p>
+<p>リンク: <a href="https://pages.awscloud.com/rs/112-TZM-766/images/20210119_AWSBlackbelt_CloudTrail.pdf">PDF資料</a> ／ <a href="https://www.youtube.com/watch?v=_mmZa1Blxc4">動画</a></p>
+<h4 id="45-aws-config">45. AWS Config</h4>
+<p>参照ID: S16R13 ／ 学習段階: ３</p>
+<p>概要: 試験の対象範囲であり、主要サービスであるから。<br>
+サービス: Config<br>
+カテゴリ: セキュリティ、アイデンティティ、コンプライアンス<br>
+推奨度: ★★☆<br>
+開催者(開催日): AWS<br>
+時間(目安): 2<br>
+費用(税込): 無料</p>
+<p>リンク: <a href="https://pages.awscloud.com/rs/112-TZM-766/images/20190618_AWS-Blackbelt_Config.pdf">PDF資料</a> ／ <a href="https://youtu.be/vnqX0gMj6jw">動画</a></p>
+<h3 id="講座実習参照位置-17">講座・実習（参照位置 17）</h3>
+<h4 id="46-サーバーレスアプリケーションのためのセキュリティアーキテクチャ">46. サーバーレスアプリケーションのためのセキュリティアーキテクチャ</h4>
+<p>参照ID: S17R2 ／ 学習段階: ３</p>
+<p>概要: アーキテクチャ部分は必ず学習する必要があり、サーバーレスアプリケーション向けのセキュリティアーキテクチャを学ぶことができる。<br>
+サービス: API Gateway/Lambda/DynamoDB/Cognito/CloudFront/S3/Kinesis<br>
+カテゴリ: サーバーレス<br>
+推奨度: ★★★<br>
+開催者(開催日): AWS<br>
+時間(目安): 2<br>
+費用(税込): 無料</p>
+<p>リンク: <a href="https://pages.awscloud.com/rs/112-TZM-766/images/A3-04.pdf">PDF資料</a> ／ <a href="https://www.youtube.com/watch?v=Se2GRFrYzNM">動画</a></p>
+<h4 id="47-めざせサーバレスプロフェッショナル">47. めざせ！サーバレスプロフェッショナル</h4>
+<p>参照ID: S17R3 ／ 学習段階: ３</p>
+<p>概要: サーバーレスに関してフェーズ１でも学んだが、サーバーレスを使いこなすための方法などに関して説明されている。アプリケーションエンジニアで学習する領域に近いため、選択制としている。<br>
+サービス: SAM/CloudFormation/Lambda/CodeStar/CodeDeploy/Xray<br>
+カテゴリ: サーバーレス<br>
+推奨度: ★★☆<br>
+開催者(開催日): AWS<br>
+時間(目安): 2<br>
+費用(税込): 無料</p>
+<p>リンク: <a href="https://pages.awscloud.com/rs/112-TZM-766/images/A-02.pdf">PDF資料</a> ／ <a href="https://youtu.be/FrbYxK-_rXU">動画</a></p>
+<h4 id="48-lets-dive-deep-into-aws-lambda">48. Let’s Dive Deep into AWS Lambda</h4>
+<p>参照ID: S17R4 ／ 学習段階: ３</p>
+<p>概要: サーバーレスの観点で学習やハンズオンを行ってきたサービスLambdaに関して詳細に学習する。<br>
+サービス: Lambda<br>
+カテゴリ: サーバーレス<br>
+推奨度: ★★☆<br>
+開催者(開催日): AWS<br>
+時間(目安): 2<br>
+費用(税込): 無料</p>
+<p>リンク: <a href="https://pages.awscloud.com/rs/112-TZM-766/images/20190402_AWSBlackbelt_AWSLambda%20Part1&amp;2.pdf">PDF資料</a> ／ <a href="https://www.youtube.com/watch?v=QvPgjEwgiew">動画</a> ／ <a href="https://www.youtube.com/watch?v=96ku2x1NCaE&amp;feature=youtu.be">動画</a> ／ <a href="https://www.youtube.com/watch?v=rMG18Fr896U">動画</a> ／ <a href="https://www.youtube.com/watch?v=AOx5iNmxOC8">動画</a></p>
+<h4 id="49-aws-コンテナサービス入門">49. AWS コンテナサービス入門</h4>
+<p>参照ID: S17R8 ／ 学習段階: ３</p>
+<p>概要: コンテナに関しては今まで学習してきていないため、わかりやすく入門から説明してくれる動画コンテンツが必要であると考えたため。コンテナはアプリケーションエンジニアの領域であるが、基本的な知識に関しては学ぶべきであると考えた。<br>
+サービス: ECS/EKS/ECR/Fargate<br>
+カテゴリ: コンテナ<br>
+推奨度: ★★★<br>
+開催者(開催日): AWS<br>
+時間(目安): 2<br>
+費用(税込): 無料</p>
+<p>リンク: <a href="https://pages.awscloud.com/rs/112-TZM-766/images/C3-01.pdf">PDF資料</a> ／ <a href="https://www.youtube.com/watch?v=L4bLDNRSYC8">動画</a></p>
+<h4 id="50-開発ガイドラインaws-ecs">50. 【開発ガイドライン】AWS ECS</h4>
+<p>参照ID: S17R9 ／ 学習段階: ３</p>
+<p>概要: ECSに関して学ぶのに最適な資料であるため。<br>
+サービス: ECS<br>
+カテゴリ: コンテナ<br>
+推奨度: ★★☆<br>
+開催者(開催日): 提供元組織<br>
+時間(目安): 3<br>
+費用(税込): 無料</p>
+<p>リンク: 社内限定URL（公開版では非表示）</p>
+<p>公開学習の補完: 社内限定資料の内容は取得していない。<a href="https://docs.aws.amazon.com/">AWS公式ドキュメント</a>から上記サービスを検索して補う。</p>
+<h4 id="51-開発ガイドラインamazon-ecr">51. 【開発ガイドライン】Amazon ECR</h4>
+<p>参照ID: S17R10 ／ 学習段階: ３</p>
+<p>概要: ECRに関して学ぶのに最適な資料であるため。<br>
+サービス: ECR<br>
+カテゴリ: コンテナ<br>
+推奨度: ★★☆<br>
+開催者(開催日): 提供元組織<br>
+時間(目安): 3<br>
+費用(税込): 無料</p>
+<p>リンク: 社内限定URL（公開版では非表示）</p>
+<p>公開学習の補完: 社内限定資料の内容は取得していない。<a href="https://docs.aws.amazon.com/">AWS公式ドキュメント</a>から上記サービスを検索して補う。</p>
+<h4 id="52-aws-fargate">52. AWS Fargate</h4>
+<p>参照ID: S17R11 ／ 学習段階: ３</p>
+<p>概要: Fargateに関して学ぶのに最適な資料であるため。<br>
+サービス: Fargate<br>
+カテゴリ: コンテナ<br>
+推奨度: ★★☆<br>
+開催者(開催日): AWS<br>
+時間(目安): 2<br>
+費用(税込): 無料</p>
+<p>リンク: <a href="https://pages.awscloud.com/rs/112-TZM-766/images/20190925_AWS-BlackBelt_AWSFargate.pdf">PDF資料</a> ／ <a href="https://youtu.be/rwwOoFBq2AU">動画</a></p>
+<h4 id="53-amazon-eks">53. Amazon EKS</h4>
+<p>参照ID: S17R12 ／ 学習段階: ３</p>
+<p>概要: EKSに関して学ぶのに最適な資料であるため。<br>
+サービス: EKS<br>
+カテゴリ: コンテナ<br>
+推奨度: ★★☆<br>
+開催者(開催日): AWS<br>
+時間(目安): 2<br>
+費用(税込): 無料</p>
+<p>リンク: <a href="https://pages.awscloud.com/rs/112-TZM-766/images/20190410_AWS-BlackBelt_AmazonEKS.pdf">PDF資料</a> ／ <a href="https://youtu.be/7_ZFvSYeOeE">動画</a></p>
+<h4 id="54-aws-elastic-beanstalk入門">54. AWS Elastic Beanstalk　入門</h4>
+<p>参照ID: S17R13 ／ 学習段階: ３</p>
+<p>概要: ElasticBeanstalkに関して学ぶことのできる入門資料。<br>
+サービス: Elastic Beanstalk<br>
+カテゴリ: コンピューティング<br>
+推奨度: ★★★<br>
+開催者(開催日): AWS<br>
+時間(目安): 0.5<br>
+費用(税込): 無料</p>
+<p>リンク: <a href="https://www.youtube.com/watch?v=LhmFZryVLiI">動画</a></p>
+<h4 id="55-amazon-eventbridge">55. Amazon EventBridge</h4>
+<p>参照ID: S17R14 ／ 学習段階: ３</p>
+<p>概要: 試験の対象範囲であり、主要サービスであるから。<br>
+サービス: EventBridge<br>
+カテゴリ: アプリケーション統合<br>
+推奨度: ★★☆<br>
+開催者(開催日): AWS<br>
+時間(目安): 2<br>
+費用(税込): 無料</p>
+<p>リンク: <a href="https://pages.awscloud.com/rs/112-TZM-766/images/20200122_BlackBelt_EventBridge.pdf">PDF資料</a> ／ <a href="https://youtu.be/H7641kZMghg">動画</a></p>
+<h4 id="56-amazon-sqs">56. Amazon SQS</h4>
+<p>参照ID: S17R15 ／ 学習段階: ３</p>
+<p>概要: 試験の対象範囲であり、主要サービスであるから。<br>
+サービス: SQS<br>
+カテゴリ: アプリケーション統合<br>
+推奨度: ★★☆<br>
+開催者(開催日): AWS<br>
+時間(目安): 2<br>
+費用(税込): 無料</p>
+<p>リンク: <a href="https://pages.awscloud.com/rs/112-TZM-766/images/20190717_AWS-BlackBelt_AmazonSQS.pdf">PDF資料</a> ／ <a href="https://youtu.be/avfc0gQ7X0A">動画</a></p>
+<h4 id="57-amazon-sns">57. Amazon SNS</h4>
+<p>参照ID: S17R16 ／ 学習段階: ３</p>
+<p>概要: 試験の対象範囲であり、主要サービスであるから。<br>
+サービス: SNS<br>
+カテゴリ: アプリケーション統合<br>
+推奨度: ★★☆<br>
+開催者(開催日): AWS<br>
+時間(目安): 2<br>
+費用(税込): 無料</p>
+<p>リンク: <a href="https://pages.awscloud.com/rs/112-TZM-766/images/20190604_AWS-Blackbelt_AmazonSNS.pdf">PDF資料</a> ／ <a href="https://youtu.be/bPCjOG_jQlc">動画</a></p>
+<h3 id="講座実習参照位置-18">講座・実習（参照位置 18）</h3>
+<h4 id="58-amazon-kinesis">58. Amazon Kinesis</h4>
+<p>参照ID: S18R2 ／ 学習段階: ２</p>
+<p>概要: 試験の対象範囲であり、主要サービスであるから。<br>
+サービス: Kinesis<br>
+カテゴリ: 分析<br>
+推奨度: ★★☆<br>
+開催者(開催日): AWS<br>
+時間(目安): 2<br>
+費用(税込): 無料</p>
+<p>リンク: <a href="https://pages.awscloud.com/rs/112-TZM-766/images/20180110_AWS-BlackBelt-Kinesis.pdf">PDF資料</a></p>
+<h4 id="59-amazon-api-gateway">59. Amazon API Gateway</h4>
+<p>参照ID: S18R3 ／ 学習段階: ２</p>
+<p>概要: 試験の対象範囲であり、主要サービスであるから。<br>
+サービス: API Gateway<br>
+カテゴリ: ウェブとモバイルのフロントエンド<br>
+推奨度: ★★☆<br>
+開催者(開催日): AWS<br>
+時間(目安): 2<br>
+費用(税込): 無料</p>
+<p>リンク: <a href="https://pages.awscloud.com/rs/112-TZM-766/images/20190514_AWS-Blackbelt_APIGateway_rev.pdf">PDF資料</a> ／ <a href="https://youtu.be/EpEETIox03s">動画</a></p>
+<h4 id="60-aws-コスト管理徹底入門">60. AWS コスト管理徹底入門</h4>
+<p>参照ID: S18R4 ／ 学習段階: ２</p>
+<p>概要: コスト管理に関するセミナーが不足していたため。試験対策でなく、運用管理のために学習すべきコンテンツである。<br>
+サービス: Cost Explorer/Budgets/Trusted Advisor/Organizations/EC2<br>
+カテゴリ: コスト<br>
+推奨度: ★★★<br>
+開催者(開催日): AWS<br>
+時間(目安): 1<br>
+費用(税込): 無料</p>
+<p>リンク: <a href="https://pages.awscloud.com/rs/112-TZM-766/images/C1-06.pdf">PDF資料</a> ／ <a href="https://www.youtube.com/watch?v=vqDJzy3dMX0">動画</a></p>
+<h4 id="61-aws-technical-essentials">61. AWS Technical Essentials</h4>
+<p>参照ID: S18R5 ／ 学習段階: ２</p>
+<p>概要: 実際に AWS でシステムを構築、運用する演習（ラボ）中心のコース。AWS のコアサービスを使った Web システムを構築および運用するための基本的な操作を、実際に行う能力を身につけることができる。<br>
+サービス: IAM/EC2/Lambda/ECS/EKS/RDS/DynamoDB/S3/CloudWatch<br>
+カテゴリ: クラウド全体<br>
+推奨度: ★☆☆<br>
+開催者(開催日): トレノケート<br>
+時間(目安): 8<br>
+費用(税込): 77,000円</p>
+<p>リンク: <a href="https://www.trainocate.co.jp/reference/course_details.aspx?code=AWC0092V">参照ページ</a></p>
+<h4 id="62-architecting-on-aws">62. Architecting on AWS</h4>
+<p>参照ID: S18R6 ／ 学習段階: ２</p>
+<p>概要: 有償コンテンツであるため、<br>
+サービス: VPC/Lambda/CloudFront/EC2<br>
+カテゴリ: クラウド全体<br>
+推奨度: ★☆☆<br>
+開催者(開催日): トレノケート<br>
+時間(目安): 24<br>
+費用(税込): 255200円</p>
+<p>リンク: <a href="https://www.trainocate.co.jp/reference/course_details.aspx?code=AWC0003V">参照ページ</a></p>
+<h4 id="63-saa試験ガイド">63. SAA試験ガイド</h4>
+<p>参照ID: S18R7 ／ 学習段階: ２</p>
+<p>概要: SAA試験の対象範囲などについて書いてあるガイド。試験受験前に試験のことに関して知っておくべきであると考えているため。<br>
+サービス: SAA試験<br>
+カテゴリ: クラウド全体<br>
+推奨度: ★★★<br>
+開催者(開催日): AWS<br>
+時間(目安): 1<br>
+費用(税込): 無料</p>
+<p>リンク: <a href="https://d1.awsstatic.com/ja_JP/training-and-certification/docs-sa-assoc/AWS-Certified-Solutions-Architect-Associate_Exam-Guide.pdf">PDF資料</a></p>
+<h4 id="64-saa試験問題サンプル">64. SAA試験問題サンプル</h4>
+<p>参照ID: S18R8 ／ 学習段階: ２</p>
+<p>概要: SAAの模擬試験を解くことができる。問題を解くことでアウトプットできるため、必須。<br>
+サービス: SAA試験<br>
+カテゴリ: クラウド全体<br>
+推奨度: ★★★<br>
+開催者(開催日): AWS<br>
+時間(目安): 1<br>
+費用(税込): 無料</p>
+<p>リンク: <a href="https://d1.awsstatic.com/ja_JP/training-and-certification/docs-sa-assoc/AWS-Certified-Solutions-Architect-Associate_Sample-Questions.pdf">PDF資料</a></p>
+<h4 id="65-aws-certified-solutions-architect--associate-official-practice-question-set-saa-c03---japanese">65. AWS Certified Solutions Architect – Associate Official Practice Question Set (SAA-C03 - Japanese)</h4>
+<p>参照ID: S18R9 ／ 学習段階: ２</p>
+<p>概要: 同じく模擬試験を受けることができる。問題は数多くこなしたほうが定着しやすいし、私見対策になるため受講。<br>
+サービス: SAA試験<br>
+カテゴリ: クラウド全体<br>
+推奨度: ★★★<br>
+開催者(開催日): AWS<br>
+時間(目安): 1<br>
+費用(税込): 無料</p>
+<p>リンク: <a href="https://explore.skillbuilder.aws/learn/course/internal/view/elearning/13269/aws-certified-solutions-architect-associate-official-practice-question-set-saa-c03-japanese?saa=sec&amp;sec=prep">学習コース（受講条件を確認）</a></p>
+<h4 id="66-saa-c03版これだけでok-aws-認定ソリューションアーキテクト--アソシエイト試験突破講座">66. 【SAA-C03版】これだけでOK！ AWS 認定ソリューションアーキテクト – アソシエイト試験突破講座</h4>
+<p>参照ID: S18R10 ／ 学習段階: ２</p>
+<p>概要: SAAの問題が700問ほど含まれている講座。多めの問題数や解説付きであるにもかかわらず金額は安めであるため、自身がない人やもう少し学習したい人は受講すると良い。<br>
+サービス: SAA試験<br>
+カテゴリ: クラウド全体<br>
+推奨度: ★☆☆<br>
+開催者(開催日): Udemy<br>
+時間(目安): 48<br>
+費用(税込): 2,400円</p>
+<p>リンク: <a href="https://www.udemy.com/course/aws-associate/">参照ページ</a></p>
+<h4 id="67-cloudtechaws認定資格対策コースsaa">67. 【CloudTech】AWS認定資格対策コース(SAA)</h4>
+<p>参照ID: S18R11 ／ 学習段階: ２</p>
+<p>概要: 資格対策の問題集。動画で解説しているものもあり、資格対策としては有用である。<br>
+サービス: SAA試験<br>
+カテゴリ: クラウド全体<br>
+推奨度: ★★☆<br>
+開催者(開催日): CloudTech<br>
+時間(目安): 6<br>
+費用(税込): 無料</p>
+<p>リンク: <a href="https://kws-cloud-tech.com/lessons/1-30%ef%bc%88saa%ef%bc%89">参照ページ</a></p>
+<h4 id="68-aws認定ソリューションアーキテクトアソシエイト">68. AWS認定ソリューションアーキテクト　アソシエイト</h4>
+<p>参照ID: S18R12 ／ 学習段階: ２</p>
+<p>概要: 認定資格。アソシエイト相当から技術として認められるものがある。<br>
+サービス: SAA試験<br>
+カテゴリ: クラウド全体<br>
+推奨度: -<br>
+開催者(開催日): AWS<br>
+時間(目安): 2<br>
+費用(税込): 16,500円</p>
+<p>リンク: <a href="https://aws.amazon.com/jp/certification/certified-solutions-architect-associate/">参照ページ</a></p>
+<h2 id="元表の追補集計">元表の追補・集計</h2>
+<p>数値は原資料時点の集計であり、現在の所要時間や費用の見積もりではない。結合セルに続く時間表記や補助注記もここに残す。</p>
+<ul>
+<li>
+<p>参照位置 12・行10: 推奨度: ★★★ ／ 時間(目安): 26時間 ／ 費用(税込): 3.3人日</p>
+</li>
+<li>
+<p>参照位置 12・行11: 推奨度: ★★☆ ／ 時間(目安): 0時間 ／ 費用(税込): 0人日</p>
+</li>
+<li>
+<p>参照位置 12・行12: 推奨度: ★☆☆ ／ 時間(目安): 39時間 ／ 費用(税込): 4.9人日</p>
+</li>
+</ul>
+<p>補助注記（参照位置 12）: インプット ／ インプット ／ アウトプット ／ アウトプット ／ インプット ／ インプット ／ アウトプット ／ インプット</p>
+<ul>
+<li>
+<p>参照位置 14・行5: 推奨度: ★★★ ／ 時間(目安): 56.5時間 ／ 費用(税込): 7.1人日</p>
+</li>
+<li>
+<p>参照位置 14・行6: 推奨度: ★★☆ ／ 時間(目安): 0時間 ／ 費用(税込): 0人日</p>
+</li>
+<li>
+<p>参照位置 14・行7: 推奨度: ★☆☆ ／ 時間(目安): 0時間 ／ 費用(税込): 0人日</p>
+</li>
+<li>
+<p>参照位置 15・行15: 時間(目安): 2</p>
+</li>
+<li>
+<p>参照位置 17・行5: 時間(目安): 2 ／ 費用(税込): 無料</p>
+</li>
+<li>
+<p>参照位置 17・行6: 時間(目安): 2 ／ 費用(税込): 無料</p>
+</li>
+<li>
+<p>参照位置 17・行7: 時間(目安): 2 ／ 費用(税込): 無料</p>
+</li>
+<li>
+<p>参照位置 18・行13: 推奨度: ★★★ ／ 時間(目安): 42.5時間 ／ 費用(税込): 5.3人日</p>
+</li>
+<li>
+<p>参照位置 18・行14: 推奨度: ★★☆ ／ 時間(目安): 76時間 ／ 費用(税込): 9.5人日</p>
+</li>
+<li>
+<p>参照位置 18・行15: 推奨度: ★☆☆ ／ 時間(目安): 80時間 ／ 費用(税込): 10人日</p>
+</li>
+</ul>
+<h2 id="学習後の演習">学習後の演習</h2>
+<p>VPCと通信許可の図、サービス選定理由、監視通知と復元手順を作り、別の構成案と比較する。</p>
+<h2 id="完了条件">完了条件</h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled> 必修と補足の違いを説明し、自分が実施する講座を選んだ</li>
+<li class="task-list-item"><input type="checkbox" disabled> 選んだ講座で学んだことを、自分の言葉で説明した</li>
+<li class="task-list-item"><input type="checkbox" disabled> 演習の判断理由、失敗時の対応、検証方法を記録した</li>
+<li class="task-list-item"><input type="checkbox" disabled> 未受講・閲覧不可・旧仕様の項目を完了扱いにしていない</li>
+</ul>
+<p>次のコースは<a href="/learning/cloud/aws/aws%E5%AD%A6%E7%BF%92%E3%82%B3%E3%83%BC%E3%82%B9%E7%B7%8F%E5%90%88%E6%A1%88%E5%86%85/">AWS学習コース総合案内</a>から選ぶ。</p>
+ <footer class="learning-lesson-footer"> <p>NEXT LESSON</p> <a href="/learning/cloud/aws/aws%E4%B8%8A%E7%B4%9A%E8%A8%AD%E8%A8%88%E3%82%B3%E3%83%BC%E3%82%B9/"> <span>実践</span> <strong>AWS上級設計コース</strong> <small>組織統制、移行、継続的な監視、高度なネットワークの講座を学びます。</small> </a> </footer> </article> </div> </div> </main>  <footer> <p>Kryιk — BUILT FROM EVERYDAY PROBLEMS.</p> <a href="#top">ページの先頭へ ↑</a> </footer> </body> </html>
