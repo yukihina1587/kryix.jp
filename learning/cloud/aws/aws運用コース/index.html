@@ -1,64 +1,60 @@
-<!DOCTYPE html><html lang="ja"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="AWS運用コースを基礎から実践へつなげて学ぶ技術教材。監視・ログ・復旧とシステムオペレーターの学習経路をたどります。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://kryix.jp/learning/cloud/aws/aws%E9%81%8B%E7%94%A8%E3%82%B3%E3%83%BC%E3%82%B9/"><meta property="og:type" content="website"><meta property="og:locale" content="ja_JP"><meta property="og:title" content="AWS運用コース — 技術学習ロードマップ — Kryιk"><meta property="og:description" content="AWS運用コースを基礎から実践へつなげて学ぶ技術教材。監視・ログ・復旧とシステムオペレーターの学習経路をたどります。"><meta property="og:url" content="https://kryix.jp/learning/cloud/aws/aws%E9%81%8B%E7%94%A8%E3%82%B3%E3%83%BC%E3%82%B9/"><meta name="theme-color" content="#c8ff4a"><script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"AWS運用コース","description":"AWS運用コースを基礎から実践へつなげて学ぶ技術教材。監視・ログ・復旧とシステムオペレーターの学習経路をたどります。","educationalLevel":"実践","learningResourceType":"Lesson","isPartOf":{"@type":"Course","name":"クラウドコース","url":"https://kryix.jp/learning/#course-cloud"}}</script><title>AWS運用コース — 技術学習ロードマップ — Kryιk</title><link rel="stylesheet" href="/assets/BaseLayout.DLMVfHxw.css"></head> <body> <a class="skip-link" href="#main">本文へ移動</a> <header class="site-header"> <a class="brand" href="/" aria-label="ホームへ戻る">Kry<span lang="el">ι</span>k<span aria-hidden="true">.</span></a> <nav aria-label="メインナビゲーション"> <a href="/about/">自己紹介</a> <a href="/#patch-notes">人生</a> <a href="/#toolbox">技術</a> <a href="/projects/">作品</a> <a href="/research/">研究</a> <a href="/play/roulette/">遊び</a> <a href="/learning/">学ぶ</a> </nav> </header>  <main id="main" class="learning-note-page"> <div class="learning-note-shell" id="top"> <nav class="learning-breadcrumb" aria-label="パンくずリスト"> <a href="/learning/">技術学習</a> <span aria-hidden="true">/</span> <a href="/learning/#course-cloud">クラウド</a> <span aria-hidden="true">/</span><span>aws</span> </nav> <div class="learning-note-layout"> <aside class="learning-toc" aria-labelledby="learning-toc-title"> <p class="section-number">CLOUD / 実践</p> <div class="learning-course-progress" aria-label="クラウドコース 9/22"> <span style="--learning-progress: 40.909090909090914%"></span> <small>9 / 22</small> </div> <h2 class="learning-course-nav-title">コース内の位置</h2> <div class="learning-course-neighbors"> <a href="/learning/cloud/aws/aws%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA%E3%82%B3%E3%83%BC%E3%82%B9/"><span>← 前へ</span><strong>AWSアプリ開発コース</strong></a> <a href="/learning/cloud/aws/aws-devops%E3%82%B3%E3%83%BC%E3%82%B9/"><span>次へ →</span><strong>AWS DevOpsコース</strong></a> </div> <h2 id="learning-toc-title">この教材の目次</h2> <ol> <li><a href="#学習目標">学習目標</a></li><li><a href="#このコースの使い方">このコースの使い方</a></li><li><a href="#学習段階と講座一覧">学習段階と講座一覧</a></li><li class="learning-toc-subitem"><a href="#学習の段階参照位置-31">学習の段階（参照位置 31）</a></li><li class="learning-toc-subitem"><a href="#講座実習参照位置-32">講座・実習（参照位置 32）</a></li><li><a href="#元表の追補集計">元表の追補・集計</a></li><li><a href="#学習後の演習">学習後の演習</a></li><li><a href="#完了条件">完了条件</a></li> </ol> <a class="learning-index-back" href="/learning/#course-cloud"><span aria-hidden="true">←</span> コース一覧へ戻る</a> </aside> <article class="learning-prose"> <header class="learning-lesson-intro"> <p><span>実践</span>LESSON 08</p> <strong>この教材で学ぶこと</strong> <span>監視・ログ・復旧とシステムオペレーターの学習経路をたどります。</span> </header> <h1 id="aws運用コース">AWS運用コース</h1>
+<!DOCTYPE html><html lang="ja"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="AWS運用コースを基礎から実践へつなげて学ぶ技術教材。監視・ログ・復旧とシステムオペレーターの学習経路をたどります。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://kryix.jp/learning/cloud/aws/aws%E9%81%8B%E7%94%A8%E3%82%B3%E3%83%BC%E3%82%B9/"><meta property="og:type" content="website"><meta property="og:locale" content="ja_JP"><meta property="og:title" content="AWS運用コース — 技術学習ロードマップ — Kryιk"><meta property="og:description" content="AWS運用コースを基礎から実践へつなげて学ぶ技術教材。監視・ログ・復旧とシステムオペレーターの学習経路をたどります。"><meta property="og:url" content="https://kryix.jp/learning/cloud/aws/aws%E9%81%8B%E7%94%A8%E3%82%B3%E3%83%BC%E3%82%B9/"><meta name="theme-color" content="#c8ff4a"><script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"AWS運用コース","description":"AWS運用コースを基礎から実践へつなげて学ぶ技術教材。監視・ログ・復旧とシステムオペレーターの学習経路をたどります。","educationalLevel":"実践","learningResourceType":"Lesson","isPartOf":{"@type":"Course","name":"クラウドコース","url":"https://kryix.jp/learning/#course-cloud"}}</script><title>AWS運用コース — 技術学習ロードマップ — Kryιk</title><link rel="stylesheet" href="/assets/BaseLayout.DLMVfHxw.css"></head> <body> <a class="skip-link" href="#main">本文へ移動</a> <header class="site-header"> <a class="brand" href="/" aria-label="ホームへ戻る">Kry<span lang="el">ι</span>k<span aria-hidden="true">.</span></a> <nav aria-label="メインナビゲーション"> <a href="/about/">自己紹介</a> <a href="/#patch-notes">人生</a> <a href="/#toolbox">技術</a> <a href="/projects/">作品</a> <a href="/research/">研究</a> <a href="/play/roulette/">遊び</a> <a href="/learning/">学ぶ</a> </nav> </header>  <main id="main" class="learning-note-page"> <div class="learning-note-shell" id="top"> <nav class="learning-breadcrumb" aria-label="パンくずリスト"> <a href="/learning/">技術学習</a> <span aria-hidden="true">/</span> <a href="/learning/#course-cloud">クラウド</a> <span aria-hidden="true">/</span><span>aws</span> </nav> <div class="learning-note-layout"> <aside class="learning-toc" aria-labelledby="learning-toc-title"> <p class="section-number">CLOUD / 実践</p> <div class="learning-course-progress" aria-label="クラウドコース 9/22"> <span style="--learning-progress: 40.909090909090914%"></span> <small>9 / 22</small> </div> <h2 class="learning-course-nav-title">コース内の位置</h2> <div class="learning-course-neighbors"> <a href="/learning/cloud/aws/aws%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA%E3%82%B3%E3%83%BC%E3%82%B9/"><span>← 前へ</span><strong>AWSアプリ開発コース</strong></a> <a href="/learning/cloud/aws/aws-devops%E3%82%B3%E3%83%BC%E3%82%B9/"><span>次へ →</span><strong>AWS DevOpsコース</strong></a> </div> <h2 id="learning-toc-title">この教材の目次</h2> <ol> <li><a href="#学習目標">学習目標</a></li><li><a href="#このコースの使い方">このコースの使い方</a></li><li><a href="#学習段階と講座一覧">学習段階と講座一覧</a></li><li class="learning-toc-subitem"><a href="#学習の段階">学習の段階</a></li><li class="learning-toc-subitem"><a href="#講座実習">講座・実習</a></li><li><a href="#学習後の演習">学習後の演習</a></li><li><a href="#完了条件">完了条件</a></li> </ol> <a class="learning-index-back" href="/learning/#course-cloud"><span aria-hidden="true">←</span> コース一覧へ戻る</a> </aside> <article class="learning-prose"> <header class="learning-lesson-intro"> <p><span>実践</span>LESSON 08</p> <strong>この教材で学ぶこと</strong> <span>監視・ログ・復旧とシステムオペレーターの学習経路をたどります。</span> </header> <h1 id="aws運用コース">AWS運用コース</h1>
 <blockquote>
 <p>前提: <a href="/learning/cloud/aws/%E5%9F%BA%E7%A4%8E%E3%81%8B%E3%82%89%E8%A8%AD%E8%A8%88%E9%81%8B%E7%94%A8%E3%81%B8/">AWS基礎から設計・運用へ</a>。<a href="/learning/cloud/aws/aws%E5%AD%A6%E7%BF%92%E3%82%B3%E3%83%BC%E3%82%B9%E7%B7%8F%E5%90%88%E6%A1%88%E5%86%85/">AWS学習コース総合案内</a>で現在地を確認する。</p>
 </blockquote>
 <h2 id="学習目標">学習目標</h2>
 <p>監視、キャパシティ、ログ、変更、復旧を運用手順へ落とし込む。</p>
 <h2 id="このコースの使い方">このコースの使い方</h2>
-<p>研修・資料・動画・実習を学習段階ごとに掲載する。推奨度・時間・費用・試験名は原資料に記載された当時の情報であり、現在の料金や受験資格を保証しない。
-リンク先の受講可否は提供元で確認する。「無料」は教材の当時の条件で、クラウド資源の利用料を含む意味ではない。
-URLがない参照指示も省略せず残している。元ガイドのSTEP番号と現行ガイドの構成が同じかは、<a href="https://aws.amazon.com/jp/training/ramp-up-guides/">AWS Ramp-Up Guides</a>で照合する。</p>
+<p>研修・資料・動画・実習を学習段階ごとに掲載しています。まず基礎を学び、演習で確かめてから次の段階へ進んでください。
+時間と費用は目安です。申し込み時に各講座の案内を確認してください。教材費とクラウドの利用料金は別です。
+分野別の学習項目は<a href="https://aws.amazon.com/jp/training/ramp-up-guides/">AWS Ramp-Up Guides</a>も活用してください。</p>
 <h2 id="学習段階と講座一覧">学習段階と講座一覧</h2>
-<h3 id="学習の段階参照位置-31">学習の段階（参照位置 31）</h3>
+<h3 id="学習の段階">学習の段階</h3>
 <ul>
 <li>STEP ／ ①クラウドエンジニア 育成プログラム ／ ②知識・経験の拡張 ／ ③エンジニアとしてのレベルアップ</li>
 <li>詳細 ／ 「①クラウドエンジニア」の育成プログラムをもとに業務遂行に必要な知識を構築・蓄積する。業務遂行する上で、クラウドエンジニアとしてのレベル向上をさせる。プロジェクトマネージャの指示に従い、独力で業務遂行ができるようになる ／ 業務を通じて、システム運用についての知識・経験を習得する。より効率的にシステムを運用するため、システムの統制や自動化やオートスケールなどについて学習する。 ／ DevOpsを目指し、開発手法やアプリ運用などの学習を行う。</li>
 <li>期間（目安） ／ ～3年 ／ ～5年</li>
 <li>AWSランクアップガイド</li>
 </ul>
-<p>補足: エンジニアとしてレベルアップ ／ ＋ ／ 教育・検証によるクラウド運用の習得 ／ フェーズ0 ／ フェーズ1 ／ フェーズ2 ／ アーキテクトアソシエイト ／ プラクティショナー ／ フェーズ1～4 ／ SysOpsアドミニストレーター アソシエイト ／ 取得目標(業務経験 4年～5年程度めど) ／ ランプアップガイド：アーキテクチャ ／ ランプアップガイド：システムオペレーター　 ／ フェーズ5 ／ フェーズ6 ／ ①クラウドエンジニアの育成プログラムによる学習 ／ 達成 ／ 業務遂行 ／ ＋ ／ 教育・検証によるクラウド運用の習得</p>
-<h3 id="講座実習参照位置-32">講座・実習（参照位置 32）</h3>
+<h3 id="講座実習">講座・実習</h3>
 <h4 id="1-クラウドエンジニアフェーズ０２参照">1. ①クラウドエンジニア　フェーズ０～２参照</h4>
-<p>参照ID: S32R2 ／ 学習段階: 0～２</p>
+<p>学習段階: 0～２</p>
 <p>開催者(開催日): AWS(オンデマンド)<br>
 時間(目安): 1時間/動画<br>
 費用(税込): 無料</p>
-<p>リンク: 原資料にURL設定なし。講座名または参照先のコースから確認する。</p>
 <h4 id="2-ランプアップガイドシステムオペレータstep１参照">2. ランプアップガイド：システムオペレータ　STEP１参照</h4>
-<p>参照ID: S32R3 ／ 学習段階: 1</p>
-<p>リンク: <a href="https://aws.amazon.com/jp/training/ramp-up-guides/">AWS Ramp-Up Guides（原資料はガイド内STEPの参照指示）</a></p>
+<p>学習段階: 1</p>
+<p>リンク: <a href="https://aws.amazon.com/jp/training/ramp-up-guides/">AWS Ramp-Up Guides</a></p>
 <h4 id="3-ランプアップガイドシステムオペレータstep２参照">3. ランプアップガイド：システムオペレータ　STEP２参照</h4>
-<p>参照ID: S32R4 ／ 学習段階: 2</p>
-<p>リンク: <a href="https://aws.amazon.com/jp/training/ramp-up-guides/">AWS Ramp-Up Guides（原資料はガイド内STEPの参照指示）</a></p>
+<p>学習段階: 2</p>
+<p>リンク: <a href="https://aws.amazon.com/jp/training/ramp-up-guides/">AWS Ramp-Up Guides</a></p>
 <h4 id="4-ランプアップガイドシステムオペレータstep３参照">4. ランプアップガイド：システムオペレータ　STEP３参照</h4>
-<p>参照ID: S32R5 ／ 学習段階: 3</p>
-<p>リンク: <a href="https://aws.amazon.com/jp/training/ramp-up-guides/">AWS Ramp-Up Guides（原資料はガイド内STEPの参照指示）</a></p>
+<p>学習段階: 3</p>
+<p>リンク: <a href="https://aws.amazon.com/jp/training/ramp-up-guides/">AWS Ramp-Up Guides</a></p>
 <h4 id="5-systems-operations-on-aws">5. Systems Operations on AWS</h4>
-<p>参照ID: S32R6 ／ 学習段階: 3</p>
+<p>学習段階: 3</p>
 <p>概要: ネットワークやシステムに関する自動化や繰り返しが可能なデプロイを AWS プラットフォームで作成する方法を学習するコース。<br>
 開催者(開催日): トレノケート(リンク参照)<br>
 時間(目安): 3日<br>
 費用(税込): 231,000円</p>
 <p>リンク: <a href="https://www.trainocate.co.jp/reference/course_details.aspx?code=AWC0005V">参照ページ</a></p>
 <h4 id="6-ランプアップガイドシステムオペレータstep４１４５参照">6. ランプアップガイド：システムオペレータ　STEP４.１～４.５参照</h4>
-<p>参照ID: S32R7 ／ 学習段階: 4</p>
-<p>リンク: <a href="https://aws.amazon.com/jp/training/ramp-up-guides/">AWS Ramp-Up Guides（原資料はガイド内STEPの参照指示）</a></p>
+<p>学習段階: 4</p>
+<p>リンク: <a href="https://aws.amazon.com/jp/training/ramp-up-guides/">AWS Ramp-Up Guides</a></p>
 <h4 id="7-ランプアップガイドシステムオペレータstep５参照">7. ランプアップガイド：システムオペレータ　STEP５参照</h4>
-<p>参照ID: S32R8 ／ 学習段階: ５</p>
-<p>リンク: <a href="https://aws.amazon.com/jp/training/ramp-up-guides/">AWS Ramp-Up Guides（原資料はガイド内STEPの参照指示）</a></p>
+<p>学習段階: ５</p>
+<p>リンク: <a href="https://aws.amazon.com/jp/training/ramp-up-guides/">AWS Ramp-Up Guides</a></p>
 <h4 id="8-ランプアップガイドシステムオペレータstep６参照">8. ランプアップガイド：システムオペレータ　STEP６参照</h4>
-<p>参照ID: S32R9 ／ 学習段階: ６</p>
-<p>リンク: <a href="https://aws.amazon.com/jp/training/ramp-up-guides/">AWS Ramp-Up Guides（原資料はガイド内STEPの参照指示）</a></p>
+<p>学習段階: ６</p>
+<p>リンク: <a href="https://aws.amazon.com/jp/training/ramp-up-guides/">AWS Ramp-Up Guides</a></p>
 <h4 id="9-aws-認定sysopsアドミニストレーター-アソシエイト模擬試験問題集">9. AWS 認定SysOpsアドミニストレーター アソシエイト模擬試験問題集</h4>
-<p>参照ID: S32R10 ／ 学習段階: ６</p>
+<p>学習段階: ６</p>
 <p>概要: AWS認定SysOpsアドミニストレーター アソシエイト試験のための学習コンテンツ。<br>
 開催者(開催日): Udemy(オンデマンド)<br>
 時間(目安): 1日<br>
 費用(税込): 2,440円</p>
 <p>リンク: <a href="https://www.udemy.com/course/aws-sysops-53195-q/">参照ページ</a></p>
-<p>更新注記: 現在の運用系認定は<a href="https://aws.amazon.com/certification/certified-cloudops-engineer-associate/">CloudOps Engineer – Associate</a>で確認する。旧講座の対応範囲をそのまま現行試験範囲とみなさない。</p>
-<h2 id="元表の追補集計">元表の追補・集計</h2>
-<p>数値は原資料時点の集計であり、現在の所要時間や費用の見積もりではない。結合セルに続く時間表記や補助注記もここに残す。</p>
+<p>現在の運用系認定は<a href="https://aws.amazon.com/certification/certified-cloudops-engineer-associate/">CloudOps Engineer – Associate</a>で確認する。旧講座の対応範囲をそのまま現行試験範囲とみなさない。</p>
 <h2 id="学習後の演習">学習後の演習</h2>
 <p>障害検知から復旧までの手順を作成し、担当、判断材料、復元先、利用再開条件を明記する。</p>
 <h2 id="完了条件">完了条件</h2>
